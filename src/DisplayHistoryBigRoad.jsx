@@ -1,56 +1,15 @@
 import "./DisplayHistoryBigRoad.css";
 
 function DisplayHistoryBigRoad() {
+  const squaretiles = [];
+  for(let i = 0; i < 100; i++){
+    squaretiles.push(<div className="squaretiles"></div>)
+  }
+
   return (
-    <>
       <div className="tile">
-        <div className="squaretiles"></div>
-        <div className="squaretiles"></div>
-        <div className="squaretiles"></div>
-        <div className="squaretiles"></div>
-        <div className="squaretiles"></div>
-        <div className="squaretiles"></div>
-        <div className="squaretiles"></div>
-        <div className="squaretiles"></div>
-        <div className="squaretiles"></div>
-        <div className="squaretiles"></div>
-        <div className="squaretiles"></div>
-        <div className="squaretiles"></div>
-        <div className="squaretiles"></div>
-        <div className="squaretiles"></div>
-        <div className="squaretiles"></div>
-        <div className="squaretiles"></div>
-        <div className="squaretiles"></div>
-        <div className="squaretiles"></div>
-        <div className="squaretiles"></div>
-        <div className="squaretiles"></div>
-        <div className="squaretiles"></div>
-        <div className="squaretiles"></div>
-        <div className="squaretiles"></div>
-        <div className="squaretiles"></div>
-        <div className="squaretiles"></div>
-        <div className="squaretiles"></div>
-        <div className="squaretiles"></div>
-        <div className="squaretiles"></div>
-        <div className="squaretiles"></div>
-        <div className="squaretiles"></div>
-        <div className="squaretiles"></div>
-        <div className="squaretiles"></div>
-        <div className="squaretiles"></div>
-        <div className="squaretiles"></div>
-        <div className="squaretiles"></div>
-        <div className="squaretiles"></div>
-        <div className="squaretiles"></div>
-        <div className="squaretiles"></div>
-        <div className="squaretiles"></div>
-        <div className="squaretiles"></div>
-        <div className="squaretiles"></div>
-        <div className="squaretiles"></div>
-        <div className="squaretiles"></div>
-        <div className="squaretiles"></div>
-        <div className="squaretiles"></div>
+        {squaretiles}
       </div>
-    </>
   );
 }
 

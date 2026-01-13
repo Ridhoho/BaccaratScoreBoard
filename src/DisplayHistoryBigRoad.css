@@ -5,11 +5,16 @@
     position: absolute;
     top: 0;
     left: 0;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 80px);
+    grid-auto-rows: 80px;
+    gap: 0;
+    overflow: scroll;
 }
 
 .squaretiles{
-    width: 50px;
-    height: 50px;
     border: 2px solid rgba(128, 128, 128, 0.5);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }

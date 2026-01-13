@@ -1,0 +1,75 @@
+.ButtonSection {
+  width: 50%;
+  height: 20%;
+  border: 4px solid black;
+  position: absolute;
+  top: 40.5%;
+  left: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.ButtonGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 50px;
+}
+
+.PlayerButton,
+.BankerButton,
+.TieButton,
+.UndoButton {
+  width: 120px;
+  height: 120px;
+  border-radius: 50px;
+  border: 3px solid black;
+  color: white;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 150%;
+}
+
+.PlayerButton {
+  background-color: blue;
+}
+
+.BankerButton {
+  background-color: red;
+}
+
+.TieButton {
+  background-color: green;
+}
+
+.UndoButton {
+  background-color: orange;
+}
+
+.PlayerPair,
+.BankerPair {
+  width: 80px;
+  height: 40px;
+  border-radius: 20px;
+  border: 3px solid;
+  background-color: white;
+  font-weight: bold;
+  font-size: 120%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.PlayerPair {
+  border-color: blue;
+  color: blue;
+}
+
+.BankerPair {
+  border-color: red;
+  color: red;
+}
