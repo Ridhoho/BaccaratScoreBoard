@@ -1,20 +1,25 @@
+/* TODO: Avoid position: absolute for layout - use Flexbox or Grid in parent container instead */
+/* PROBLEM: Absolute positioning breaks on different screen sizes and makes responsive design difficult */
 .tile{
-    width: 94%;
-    height: 40%;
+    width: 94%; /* NOTE: Why 94%? Why not 100% with padding? Magic numbers are hard to maintain */
+    height: 40%; /* PROBLEM: Percentage height is unreliable. Consider viewport units (40vh) or flex */
     border: 4px solid black;
-    position: absolute;
+    position: absolute; /* FIXME: Use flex or grid layout instead of absolute positioning */
     top: 0;
     left: 0;
     display: grid;
     grid-template-columns: repeat(auto-fill, 80px);
     grid-auto-rows: 80px;
     gap: 0;
-    overflow: scroll;
+    overflow: scroll; /* NOTE: Use 'overflow: auto' instead of 'scroll' to avoid always-visible scrollbars */
 }
 
+/* TODO: Add styles for displaying actual game results (circles for player/banker, colors, etc.) */
 .squaretiles{
     border: 2px solid rgba(128, 128, 128, 0.5);
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    /* TODO: Add relative positioning for absolutely positioned result markers */
+    /* TODO: Add flex centering for result display */
 }

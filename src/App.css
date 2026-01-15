@@ -1,3 +1,29 @@
+/* FIXME: This entire file is unused template code from Vite! */
+/* None of these styles (.logo, .card, .read-the-docs) are used in your app */
+/* TODO: Either delete this file or replace with actual app styles */
+
+/* TODO: Consider adding layout styles here instead of using absolute positioning */
+/* Example:
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  gap: 1rem;
+}
+
+.top-section {
+  display: flex;
+  flex: 2;
+  gap: 1rem;
+}
+
+.bottom-section {
+  flex: 1;
+}
+*/
+
+/* ===== UNUSED VITE TEMPLATE STYLES BELOW - DELETE THESE ===== */
+
 #root {
   max-width: 1280px;
   margin: 0 auto;

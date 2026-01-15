@@ -1,7 +1,8 @@
+/* TODO: Avoid position: absolute - use Flexbox layout in parent container */
 .OptionsGroup {
-  width: 6%;
-  height: 40%;
-  position: absolute;
+  width: 6%; /* PROBLEM: 6% is too small on mobile, too large on big screens. Use min-width/max-width */
+  height: 40%; /* PROBLEM: Percentage height is unreliable */
+  position: absolute; /* FIXME: Use flex layout instead of absolute positioning */
   top: 0;
   right: 0;
   display: flex;
