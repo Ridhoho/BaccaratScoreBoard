@@ -5,9 +5,6 @@ import GameResultButton from './GameResultButton.jsx'
 import Options from './Options.jsx'
 
 function App() {
-  // FIXME: This state is unused - leftover from Vite template. Remove it!
-  const [count, setCount] = useState(0)
-
   // TODO: Add state management for game history
   // const [gameHistory, setGameHistory] = useState([]);
   
