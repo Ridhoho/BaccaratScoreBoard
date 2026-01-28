@@ -14,19 +14,22 @@ function App() {
   // const resetGame = () => setGameHistory([]);
 
   return (
-    <>
-      {/* TODO: Pass gameHistory as prop to DisplayHistoryBigRoad */}
-      {/* Example: <DisplayHistoryBigRoad history={gameHistory} /> */}
-      <DisplayHistoryBigRoad />
+    // FIXED: Now using the CSS classes you created in App.css!
+    // This connects your CSS styles to the actual JSX elements
+    <div className="app-container">
+      <div className="top-section">
+        {/* TODO: Pass gameHistory as prop to DisplayHistoryBigRoad */}
+        <DisplayHistoryBigRoad />
+        
+        {/* TODO: Pass handler functions as props to Options */}
+        <Options />
+      </div>
       
-      {/* TODO: Pass handler functions as props to Options */}
-      {/* Example: <Options onReset={resetGame} /> */}
-      <Options />
-      
-      {/* TODO: Pass handler functions as props to GameResultButton */}
-      {/* Example: <GameResultButton onAddResult={addResult} onUndo={undoLastResult} /> */}
-      <GameResultButton />
-    </>
+      <div className="bottom-section">
+        {/* TODO: Pass handler functions as props to GameResultButton */}
+        <GameResultButton />
+      </div>
+    </div>
   )
 }
 

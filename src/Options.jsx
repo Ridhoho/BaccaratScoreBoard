@@ -1,8 +1,9 @@
 import "./Options.css";
-import MenuIcon from "./assets/OptionsImages/menu-icon.png";
-import SettingsIcon from "./assets/OptionsImages/settings-icon.png";
-import ResetIcon from "./assets/OptionsImages/reset-icon.png";
-import InfoIcon from "./assets/OptionsImages/info-icon.png";
+// TEMP FIX: Changed back to match actual filenames (capitalized)
+import MenuIcon from "./assets/OptionsImages/Menu-Icon.png";
+import SettingsIcon from "./assets/OptionsImages/Settings-Icon.png";
+import ResetIcon from "./assets/OptionsImages/Reset-Icon.png";
+import InfoIcon from "./assets/OptionsImages/Info-Icon.png";
 
 // TODO: Add PropTypes for type checking
 // Props needed: onReset, onMenu, onSettings, onInfo (all functions)
