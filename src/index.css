@@ -13,6 +13,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* NOTE: `index.css` is GLOBAL CSS. It can accidentally affect every component (buttons, body layout, etc).
+   Mentor tip: When debugging, inspect the element in DevTools and check the "Styles" + "Computed" panels.
+   It will tell you the exact file + line of the winning rule (whether it's from index.css or a component CSS). */
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -29,6 +33,9 @@ body {
   min-height: 100vh;
   box-sizing: border-box;
 }
+
+/* TODO: Consider adding `*, *::before, *::after { box-sizing: border-box; }`
+   This avoids layout surprises when elements add padding/borders. */
 
 /* Ensure #root takes full viewport */
 #root {
@@ -53,6 +60,10 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
+/* NOTE: This global `button` style affects every button in the app (including your game buttons).
+   If a component needs a very custom button reset (e.g. icon-only buttons), prefer a class selector
+   like `.OptionsGroup button { ... }` or `.Menu { ... }` to avoid unintended global side effects. */
 button:hover {
   border-color: #646cff;
 }

@@ -23,6 +23,8 @@ export default defineConfig([
       },
     },
     rules: {
+      // Mentor tip: keep linting strict while you're learning—it's the fastest feedback loop.
+      // If you find yourself fighting lint, use it as a clue to refactor rather than disabling rules.
       'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]' }],
     },
   },

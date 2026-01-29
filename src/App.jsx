@@ -13,6 +13,15 @@ function App() {
   // const undoLastResult = () => setGameHistory(gameHistory.slice(0, -1));
   // const resetGame = () => setGameHistory([]);
 
+  // Mentor tip: when you add `gameHistory`, keep it as the *single source of truth* in App,
+  // and pass data down via props + send events up via callbacks:
+  // - <DisplayHistoryBigRoad history={gameHistory} />
+  // - <GameResultButton onAddResult={addResult} onUndo={undoLastResult} />
+  // - <Options onReset={resetGame} />
+  //
+  // This makes the data flow predictable and easier to debug than having multiple components
+  // each storing their own copy of history.
+
   return (
     // FIXED: Now using the CSS classes you created in App.css!
     // This connects your CSS styles to the actual JSX elements

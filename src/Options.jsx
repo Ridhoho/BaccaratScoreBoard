@@ -8,6 +8,11 @@ import InfoIcon from "./assets/OptionsImages/Info-Icon.png";
 // TODO: Add PropTypes for type checking
 // Props needed: onReset, onMenu, onSettings, onInfo (all functions)
 function Options() {
+  // Mentor tip: prefer taking action handlers as props rather than hard-coding behavior here.
+  // Example:
+  // function Options({ onReset, onMenu, onSettings, onInfo }) { ... }
+  //
+  // This keeps the Options component "dumb" (UI-only) and makes it easy to test + reuse.
   return (
     <nav className="OptionsGroup">
         {/* TODO: Add onClick handlers - these buttons currently do nothing */}

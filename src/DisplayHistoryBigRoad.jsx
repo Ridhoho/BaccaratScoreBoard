@@ -11,6 +11,10 @@ function DisplayHistoryBigRoad() {
     <div key={i} className="squaretiles"></div>
   ));
 
+  // Mentor tip: when you implement the real "Big Road" logic, keep it out of the JSX.
+  // Create a pure function that maps `history -> grid cells`, then render the grid.
+  // That function can be unit-tested without React.
+
   return (
       <div className="tile">
         {squaretiles}

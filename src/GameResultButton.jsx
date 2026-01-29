@@ -6,6 +6,12 @@ import "./GameResultButton.css";
 // import PropTypes from 'prop-types';
 
 function GameResultButton() {
+  // Mentor tip: avoid pushing "history" state into this component.
+  // This component should only emit user intent:
+  // - onAddResult({ winner: 'player' | 'banker' | 'tie', playerPair, bankerPair })
+  // - onUndo()
+  // App owns the history array.
+
   // TODO: Add state for tracking pair selections
   // const [playerPair, setPlayerPair] = useState(false);
   // const [bankerPair, setBankerPair] = useState(false);
